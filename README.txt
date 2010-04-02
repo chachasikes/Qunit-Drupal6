@@ -22,7 +22,6 @@ What is the module useful for?
 * You can then write tests for your javascript. See QUnit documentation.
 
 
-
 Version
 -------
 DEVELOPMENT VERSION, I will add this to Drupal CVS as soon as I can get a CVS account.

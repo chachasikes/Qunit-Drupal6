@@ -3,10 +3,10 @@
 
 /**
  * @file
- * QUnit is a test
+ * QUnit is a test suite for javascript.
+ * This module adds the QUnit test suite to Drupal pages.
  * http://docs.jquery.com/QUnit
  */
-
 
 /**
  * Implementation of hook_help().
@@ -14,7 +14,8 @@
 function qunit_help($section) {
   switch ($section) {
     case 'admin/help#qunit':
-    return '<p>'. t('Add QUnit Javascript test library.') .'</p>';
+    return '<p>'. t('Add QUnit Javascript test library. http://docs.jquery.com/QUnit
+      To use, place tests and test modules in your javascript.') .'</p>';
   }
 }
 
@@ -37,5 +38,7 @@ function qunit_init() {
     drupal_add_js($path . '/includes/qunit/qunit.js', 'footer');
     drupal_add_css($path . '/includes/qunit/qunit.css');
     drupal_add_js($path . '/includes/qunit.setup.js', 'footer');
+    // Sample implementation of a test.
+    drupal_add_js($path . '/includes/qunit.sample.test.js', 'footer');
   }
 }
