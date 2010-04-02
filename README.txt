@@ -24,13 +24,15 @@ What is the module useful for?
 
 Version
 -------
-DEVELOPMENT VERSION, I will add this to Drupal CVS as soon as I can get a CVS account.
+DEVELOPMENT VERSION, I will add this to Drupal CVS as soon as I 
+can get a CVS account.
 
 Installation
 ------------
 1. To install place the entire qunit module in your modules directory.
 
-2. Download the QUnit javascript library from github: http://github.com/jquery/qunit
+2. Download the QUnit javascript library from github:
+   http://github.com/jquery/qunit
 
 Place the qunit folder into sites/*/modules/qunit/includes
 
@@ -38,9 +40,12 @@ So you should have:
   sites/*/modules/qunit/includes/qunit/qunit.js
   sites/*/modules/qunit/includes/qunit/qunit.css
 
-3. Go to Administer -> Site building -> Modules and enable the QUnit module.
-4. Go to Administer -> User management -> Permissions -> [admin/user/permissions] to set up permissions.
-5. Add your tests to your javascript files. Test results will appear at the bottom of the page.
+3. Go to Administer -> Site building ->
+   Modules and enable the QUnit module.
+4. Go to Administer -> User management -> Permissions -> 
+   [admin/user/permissions] to set up permissions.
+5. Add your tests to your javascript files. Test results will appear 
+   at the bottom of the page.
 
 Git hub: git@github.com:chachasikes/List-Mixer.git
 
