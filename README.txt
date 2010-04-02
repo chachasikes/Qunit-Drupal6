@@ -32,22 +32,27 @@ Installation
 1. To install place the entire qunit module in your modules directory.
 
 2. Download the QUnit javascript library from github:
-   http://github.com/jquery/qunit
+    http://github.com/jquery/qunit
 
 Place the qunit folder into sites/*/modules/qunit/includes
 
 So you should have:
-  sites/*/modules/qunit/includes/qunit/qunit.js
-  sites/*/modules/qunit/includes/qunit/qunit.css
+   sites/*/modules/qunit/includes/qunit/qunit.js
+   sites/*/modules/qunit/includes/qunit/qunit.css
 
 3. Go to Administer -> Site building ->
-   Modules and enable the QUnit module.
+    Modules and enable the QUnit module.
 4. Go to Administer -> User management -> Permissions -> 
-   [admin/user/permissions] to set up permissions.
+    [admin/user/permissions] to set up permissions.
 5. Add your tests to your javascript files. Test results will appear 
-   at the bottom of the page.
+    at the bottom of the page.
 
-Git hub: git@github.com:chachasikes/List-Mixer.git
+6. Try out sample test.
+    drupal_add_js({path to js file}, 'footer');
+    Example: 
+      drupal_add_js($path . '/includes/qunit.sample.test.js', 'footer');
+
+This module on GitHub: http://github.com/chachasikes/Qunit-Drupal6
 
 
 Maintainer
