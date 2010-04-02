@@ -1,0 +1,5 @@
+; $Id$
+name = QUnit
+description = Adds QUnit javascript test library to a Drupal site.
+package = QUnit
+core = 6.x

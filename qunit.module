@@ -1,0 +1,39 @@
+<?php
+// $Id$
+
+/**
+ * @file
+ */
+
+// @TODO Have users download qunit library from git hub.
+/**
+ * Implementation of hook_help().
+ */
+function qunit_help($section) {
+  switch ($section) {
+    case 'admin/help#qunit':
+    return '<p>'. t('Add QUnit Javascript test library.') .'</p>';
+  }
+}
+
+/**
+ * Implementation of hook_perm().
+ */
+function qunit_perm() {
+  $perms = array('access qunit');
+  return $perms;
+}
+
+/**
+ * QUnit, init
+ */
+function qunit_init() {
+  global $user;
+  $access = user_access('access qunit', $user);
+  if ($access) {
+    $path = drupal_get_path('module', 'qunit');
+    drupal_add_js($path . '/includes/qunit/qunit.js', 'footer');
+    drupal_add_css($path . '/includes/qunit/qunit.css');
+    drupal_add_js($path . '/includes/qunit.setup.js', 'footer');
+}
+
