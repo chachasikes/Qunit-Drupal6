@@ -3,9 +3,11 @@
 
 /**
  * @file
+ * QUnit is a test
+ * http://docs.jquery.com/QUnit
  */
 
-// @TODO Have users download qunit library from git hub.
+
 /**
  * Implementation of hook_help().
  */
@@ -35,5 +37,5 @@ function qunit_init() {
     drupal_add_js($path . '/includes/qunit/qunit.js', 'footer');
     drupal_add_css($path . '/includes/qunit/qunit.css');
     drupal_add_js($path . '/includes/qunit.setup.js', 'footer');
+  }
 }
-
